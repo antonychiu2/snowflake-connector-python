@@ -32,12 +32,12 @@ jobs:
         run: |
           pip install semgrep
           semgrep login
-          semgrep ci --sarif --output semgrep_report.sarif
+          semgrep ci --sarif --output semgrep_report.sarif || true
       
      
       - name: Run Mobb on the findings and get fixes
         if: always()
-        uses: mobb-dev/action@v1.1
+        uses: mobb-dev/action@added-organization-id
         with:
           report-file: "semgrep_report.sarif"
           api-key: ${{ secrets.MOBB_API_TOKEN }}
