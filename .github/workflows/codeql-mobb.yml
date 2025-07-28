@@ -1,4 +1,4 @@
-name: Mobb fix from CodeQL reports
+name: Mobb/CodeQL
 on:
   workflow_run:
     workflows: ["CodeQL"] 
