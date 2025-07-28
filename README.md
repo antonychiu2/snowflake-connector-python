@@ -9,7 +9,7 @@
 This package includes the Snowflake Connector for Python, which conforms to the [Python DB API 2.0](https://www.python.org/dev/peps/pep-0249/) specification.
 
 The Snowflake Connector for Python provides an interface for developing Python
-applications that can connect to Snowflake and perform all standard operations. It
+applications that can connect to Snowflake and perform all standard operations. It 
 provides a programming alternative to developing applications in Java or C/C++
 using the Snowflake JDBC or ODBC drivers.
 
